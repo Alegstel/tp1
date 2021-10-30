@@ -1,0 +1,148 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Potta One', cursive;
+    /* color: #7b002c; */
+}
+.superbox {
+    background-color: #ffc107a0;
+    width: 90%;
+    margin: 0px auto;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4,auto);
+    grid-template-areas: "encab encab navi" 
+                         "box1 box2 box3"
+                         "box4 box5 box6"
+                         "pie pie pie";
+}
+
+h1{color: #7b002c;
+    font-family: 'Potta One', cursive;
+}
+
+a{text-decoration: none;
+    color: #000000;
+    font-size: 25px;
+}
+
+
+h1 img {float:left;}
+
+
+
+.botonenlace{
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #7b002c;
+    background-color: #ffc100;
+    border-radius: 6px;
+    border: 2px solid #7b002c;
+    transform: scale(1.2);
+}
+
+.botonenlace:hover{
+    color: #ffc100;
+    background-color: #7b002c;
+    transform: scale(1.2);
+}
+
+.superbox .encab {
+    grid-area: encab;
+}
+
+.superbox .navi {
+    grid-area: navi;
+}
+
+.superbox .box1 {
+    grid-area: box1;
+}
+.superbox .box2 {
+    grid-area: box2;
+}
+.superbox .box3 {
+    grid-area: box3;
+}
+.superbox .box4 {
+    grid-area: box4;
+}
+.superbox .box5 {
+    grid-area: box5;
+}
+.superbox .box6 {
+    grid-area: box6;
+}
+
+.box {
+     max-width: 90%;
+    max-height: 90%; 
+    margin: 20px auto;
+}
+
+.superbox .pie {
+    grid-area: pie;
+    min-height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.superbox .pie .redes {
+    min-width: 200px;
+    display: flex;
+    justify-content: space-around;
+}
+  
+.superbox .pie .redes a {
+    text-decoration: none;
+    font-size: 40px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    background: #7b002c;
+    color: #aaa;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+    transition: all .4s ease-in-out;      /* ANIMACION */
+}
+  
+.superbox .pie .redes a:hover {
+    transform: scale(1.2);                /* ANIMACION */
+}
+
+
+
+@media screen and (max-width: 768px){
+    .superbox {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5,auto);
+        grid-template-areas:    "encab navi" 
+                                "box1 box2"
+                                "box3 box4"
+                                "box5 box6"
+                                "pie pie";
+    }
+    
+}
+
+@media screen and (max-width: 576px){
+    .superbox {
+        grid-template-columns:1fr;
+        grid-template-rows: repeat(9,auto);
+        grid-template-areas:"encab"
+                            "navi"
+                            "box1"
+                            "box2"
+                            "box3" 
+                            "box4"
+                            "box5"
+                            "box6"
+                            "pie";
+    }
+    
+}

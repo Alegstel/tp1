@@ -1,0 +1,19 @@
+.header {
+    color: #7b002ce0;
+    background-color: #ffc107a0;
+    font-size: 50px;
+    padding: 10px;
+}
+
+.bigicon {
+    font-size: 35px;
+    color: #7b002ce0;
+    background-color: #ffc107e0
+    ;
+}
+/* img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    width: 80%;
+  } */
